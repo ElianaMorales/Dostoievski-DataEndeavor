@@ -1,0 +1,30 @@
+[0m00:40:31.124504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018115315490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018114D2D460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018115314080>]}
+
+
+============================== 00:40:31.127647 | e5e62bd3-9e69-4df1-a590-5bfe1d45bdd3 ==============================
+[0m00:40:31.127647 [info ] [MainThread]: Running with dbt=1.7.5
+[0m00:40:31.127647 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Eliana\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dostoievski_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m00:40:31.133158 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/Eliana/.dbt')}
+[0m00:40:31.134883 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m00:40:31.137463 [debug] [MainThread]: Starter project path: C:\Users\Eliana\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m00:40:31.166115 [info ] [MainThread]: 
+Your new dbt project "dostoievski_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:40:31.170200 [info ] [MainThread]: Setting up your profile.
+[0m01:04:16.614099 [info ] [MainThread]: Profile dostoievski_dbt written to C:\Users\Eliana\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:04:16.615660 [debug] [MainThread]: Command `dbt init` succeeded at 01:04:16.615660 after 1425.53 seconds
+[0m01:04:16.622108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018115241C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181150F7680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018115EACAA0>]}
+[0m01:04:16.624995 [debug] [MainThread]: Flushing usage events

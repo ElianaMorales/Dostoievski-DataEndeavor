@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dostoievski_info
+    description: "dbt model containing the information from the google sheet"
+    columns:
+      id: numeric
+      category: string
+      title: string
+      yop: date
+      descr: string
+    tests:
+      - unique
+      - not_null
