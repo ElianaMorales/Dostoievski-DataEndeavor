@@ -1,0 +1,13 @@
+version: "1"
+context:
+  active-host: "cloud.getdbt.com"
+  active-project: "336597"
+projects:
+  - project-name: "Analytics"
+    project-id: "336597"
+    account-name: "ME"
+    account-id: "235529"
+    account-host: "cloud.getdbt.com"
+    api-key: "a7a1d8930663df9fe0ae13534dd1e22c2d3ef070"
+
+
