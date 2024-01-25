@@ -35,6 +35,6 @@ jobs:
         run: |
           cd sql/dostoievski_dbt  # Change to the actual path
           export DBT_PROFILES_DIR=/home/runner/.dbt
-          dbt run --target ${{ secrets.DBT_TARGET }}
+          dbt run
         env:
           DBT_PROFILES_DIR: /home/runner/.dbt
