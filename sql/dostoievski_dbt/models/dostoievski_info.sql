@@ -7,9 +7,9 @@ WITH base_table AS (
         category,
         title,
         yo_p as yop,
-        "description" as descr,
-        "_row" AS id,
-        "_fivetran_synced" as update_time
+        descr as descr,
+        ROW_NUMBER() OVER() AS id,
+        _fivetran_synced as update_time
     FROM {{ source('source', 'dostievski_info') }}
 )
 
