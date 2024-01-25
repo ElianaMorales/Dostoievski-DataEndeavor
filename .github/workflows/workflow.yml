@@ -25,5 +25,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt
 
+      jobs:
+  dbt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
       - name: Run dbt
-        run: dbt run --profiles-dir . --profile bigquery_profile  # Adjust the path based on your profiles directory
+        run: |
+          cd sql/dostoievski_dbt  # Change to the actual path
+          dbt run --profiles-dir .dbt --target ${{ secrets.DBT_TARGET }}
+
