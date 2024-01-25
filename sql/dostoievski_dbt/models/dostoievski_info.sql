@@ -1,15 +1,12 @@
-
--- dostoievski_info.sql
-
--- Use the source table as a base
 WITH base_table AS (
     SELECT
         category,
         title,
-        yop,
-        Description,
-        ROW_NUMBER() OVER () AS id  -- Generate sequential numbers
-    FROM {{ ref('source_table') }}
+        yo_p as yop,
+        "description" as descr,
+        "_row" AS id,
+        "_fivetran_synced" as update_time
+    FROM {{ source('source', 'dostievski_info') }}
 )
 
 -- Final model with the added primary key
@@ -18,5 +15,6 @@ SELECT
     category,
     title,
     yop,
-    description
-FROM base_table;
+    descr,
+    update_time
+FROM base_table

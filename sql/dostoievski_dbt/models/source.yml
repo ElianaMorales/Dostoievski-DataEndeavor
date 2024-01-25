@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: source
+    database: dostoievski-project
+    schema: dostoievsky_db
+    tables:
+      - name: dostievski_info

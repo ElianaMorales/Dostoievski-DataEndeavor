@@ -1,0 +1,14 @@
+# profiles.yml
+
+bigquery_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dostoievski-project
+      dataset: dostoievsky_db
+      threads: 1
+      timeout_seconds: 300
+      keyfile: C:\Users\Eliana\Downloads\dostoievski-project-108ec7f3a4d8.json
+      location: US
