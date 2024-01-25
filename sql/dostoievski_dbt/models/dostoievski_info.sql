@@ -1,3 +1,7 @@
+{{ config(
+    materialized='table'
+) }}
+
 WITH base_table AS (
     SELECT
         category,

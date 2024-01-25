@@ -1,7 +1,7 @@
 # profiles.yml
 
 bigquery_profile:
-  target: dev
+  target: ${{ secrets.DBT_TARGET }}
   outputs:
     dev:
       type: bigquery
@@ -10,5 +10,5 @@ bigquery_profile:
       dataset: dostoievsky_db
       threads: 1
       timeout_seconds: 300
-      keyfile: C:\Users\Eliana\Downloads\dostoievski-project-108ec7f3a4d8.json
+      keyfile: ${{ secrets.DBT_GCP_KEYFILE }}
       location: US
