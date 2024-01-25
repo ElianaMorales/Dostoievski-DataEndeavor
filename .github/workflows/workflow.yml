@@ -25,6 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt
 
+      - name: Copy dbt Cloud Credentials
+        run: |
+          cp sql/dostoievski_dbt/dbt_cloud.yml /home/runner/.dbt/
+
       - name: Run dbt
         run: |
           cd sql/dostoievski_dbt  # Change to the actual path
