@@ -10,7 +10,7 @@ WITH base_table AS (
         descr as descr,
         ROW_NUMBER() OVER() AS id,
         _fivetran_synced as update_time
-    FROM {{ source('source', 'dostievski_info') }}
+    FROM {{ source('source', 'stg_dostoievski_info') }}
 )
 
 -- Final model with the added primary key

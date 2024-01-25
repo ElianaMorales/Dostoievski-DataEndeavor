@@ -5,4 +5,4 @@ sources:
     database: dostoievski-project
     schema: dostoievsky_db
     tables:
-      - name: dostievski_info
+      - name: stg_dostoievski_info
